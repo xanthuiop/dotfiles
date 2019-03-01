@@ -14,8 +14,8 @@
 
 # config
 !.config/
-!.config/i3/
-!.config/polybar/
-!.config/ranger/
+!.config/i3/*
+!.config/polybar/*
+!.config/ranger/*
 !.config/compton.conf
 
