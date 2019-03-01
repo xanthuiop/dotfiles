@@ -1,2 +1,20 @@
+# git
 *
 !.gitignore
+!.gitconfig
+
+# doc
+!README.md
+
+# system
+!.xinitrc
+!.Xresources
+!.zshrc
+!.oh-my-zsh/
+
+# config
+!.config/i3/
+!.config/polybar/
+!.config/ranger/
+!.config/compton.conf
+

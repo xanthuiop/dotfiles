@@ -1,0 +1,89 @@
+! ------------------------------------------------------------------------------
+! My Xresources config 2019-01-26
+! ------------------------------------------------------------------------------
+
+! ------------------------------------------------------------------------------
+! ROFI Color theme
+! ------------------------------------------------------------------------------
+
+rofi.color-enabled: true
+rofi.color-window: argb:ee273238, #273238, argb:3a1e2529
+rofi.color-normal: argb:00273238, #c1c1c1, argb:3a273238, #394249, #ffffff
+rofi.color-active: argb:00273238, #80cbc4, argb:3a273238, #394249, #80cbc4
+rofi.color-urgent: argb:00273238, #ff1844, argb:3a273238, #394249, #ff1844
+
+URxvt.depth:                32
+URxvt.geometry:             120x30
+!URxvt.transparent:          true
+URxvt.fading:               0
+!URxvt.shading: 		    30
+! URxvt.urgentOnBell:         true
+! URxvt.visualBell:           true
+URxvt.loginShell:           true
+URxvt.saveLines:            1000
+URxvt.internalBorder:       3
+URxvt.lineSpace:            0
+urxvt.background: rgba:0000/0000/0200/c800
+
+! Appearance
+!URxvt.font: xft:Inconsolata Nerd Font Mono:size=15, xft:DejaVu Sans:size=12
+URxvt.font: xft:Iosevka:size=14
+
+! Scrollbar
+URxvt.scrollStyle:          rxvt
+URxvt.scrollBar:            false
+
+! Perl extensions
+URxvt.perl-ext-common:      default,matcher,selection-to-clipboard
+URxvt.matcher.button:       1
+URxvt.urlLauncher:          chromium
+
+! Cursor
+URxvt.cursorBlink:          true
+URxvt.cursorColor:          #f3f3f5
+URxvt.cursorUnderline:      false
+
+! Pointer
+URxvt.pointerBlank:         true
+
+! special
+*.foreground:   #f3f3f5
+*.background:   #2f343f
+!*.cursorColor:  #676E7D
+
+! black
+*.color0:       #0c0d0e
+*.color8:       #737475
+
+! red
+*.color1:       #a54242
+*.color9:       #a54242
+
+! green
+*.color2:       #31a354
+*.color10:      #31a354
+
+! yellow
+*.color3:       #dca060
+*.color11:      #dca060
+
+! blue
+*.color4:       #5294e2
+*.color12:      #5294e2
+
+! magenta
+*.color5:       #4084d6
+*.color13:      #4084d6
+
+! cyan
+*.color6:       #087ba2
+*.color14:      #087ba2
+
+! white
+*.color7:       #f3f3f5
+*.color15:      #f3f3f5
+
+!! Transparency (0-255):
+*.alpha: 210
+!! Set a default font and font size as below:
+*.font: Iosevka-16;
