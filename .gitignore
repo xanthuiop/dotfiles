@@ -15,10 +15,10 @@
 # config
 !.config/
 !.config/i3/
-!.config/i3/*
+!.config/i3/**
 !.config/polybar/
 !.config/polybar/**
 !.config/ranger/
-!.config/ranger/*
+!.config/ranger/**
 !.config/compton.conf
 
