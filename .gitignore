@@ -20,5 +20,7 @@
 !.config/polybar/**
 !.config/ranger/
 !.config/ranger/**
+!.config/nvim/
+!.config/nvim/**
 !.config/compton.conf
 

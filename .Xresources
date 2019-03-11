@@ -25,6 +25,7 @@ URxvt.internalBorder:       3
 URxvt.lineSpace:            0
 urxvt.background: rgba:0000/0000/0200/c800
 
+
 ! Appearance
 !URxvt.font: xft:Inconsolata Nerd Font Mono:size=15, xft:DejaVu Sans:size=12
 URxvt.font: xft:Iosevka:size=14
@@ -32,11 +33,24 @@ URxvt.font: xft:Iosevka:size=14
 ! Scrollbar
 URxvt.scrollStyle:          rxvt
 URxvt.scrollBar:            false
+URxvt.secondaryScreen: 1
+URxvt.secondaryScroll: 0
+!URxvt.mouseWheelScrollPage: false
+!URxvt.secondaryWheel: 1
+! do not scroll with output
+URxvt*scrollTtyOutput: false
+
+! scroll in relation to buffer (with mouse scroll or Shift+Page Up)
+URxvt*scrollWithBuffer: true
+
+! scroll back to the bottom on keypress
+URxvt*scrollTtyKeypress: true
+
 
 ! Perl extensions
 URxvt.perl-ext-common:      default,matcher,selection-to-clipboard
 URxvt.matcher.button:       1
-URxvt.urlLauncher:          chromium
+URxvt.urlLauncher:          google-chrome-stable
 
 ! Cursor
 URxvt.cursorBlink:          true

@@ -1,5 +1,3 @@
-#set java fonts
-export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on' 
 #import pkgfile
 source /usr/share/doc/pkgfile/command-not-found.zsh
 #source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -8,6 +6,7 @@ setopt HIST_IGNORE_DUPS
 
 #alias config
 alias dotfile='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias msfconsole="msfconsole --quiet -x \"db_connect ${USER}@msf\""
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH

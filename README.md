@@ -10,7 +10,7 @@ input: fcitx fcitx-im fcitx-configtool fcitx-sogoupinyin
 font: wqy-microhei ttf-iosevka ttf-font-awesome noto-fonts adobe-source-han-sans-otc-fonts nerd-fonts  
 icon_font: siji-git  
 ui: i3 xorg xorg-xinit compton polybar xorg-xfd jsoncpp  
-file_manage: ranger  
+file_manage: ranger thunar 
 browser: ~~qutebrowser~~ google-chrome fireforx  
 ~~Theme/icons_manage: lxappearance~~  
 wallpapers_manage: nitrogen  
@@ -21,11 +21,17 @@ usb: udisks2 jq udevil pmount
 battery: acpi  
 time: ~~ntp~~ fake-hwclock-git  
 system_info: neofetch  
+remote_desktop: remmina gnome-keyring
+de/compression: zip unarchiver
 
 ## Applications For Work
+database: postgresql
 ~~envrionment: jdk8-openjdk~~  
 ~~virtual: docker virtualbox linux-lts-headers linux-lts Vagrant packer linux-headers~~  
-pentest: nmap burpsuite wireshark-qt ~~ptf~~ ~~mlocate~~  
+pentest: nmap metasploit ~~ptf~~ ~~mlocate~~  
+packet-capture: burpsuite wireshark-qt  
+hex: bless 
+dns: bind-tools
 
 ## Configure
 * add user
@@ -42,4 +48,7 @@ pentest: nmap burpsuite wireshark-qt ~~ptf~~ ~~mlocate~~
     > echo 1170 > /sys/class/backlight/intel_backlight/brightness
 * add user to wireshark
     > sudo gpasswd -a xanthu wireshark  
-    > newgrp wireshark
+    > newgrp wireshark  
+* set postgresql database
+    > sudo su - postgres -c "initdb --locale en_US.UTF-8 -E UTF8 -D '/var/lib/postgres/data'"
+    > sudo -i -u postgres createuser --interactive
